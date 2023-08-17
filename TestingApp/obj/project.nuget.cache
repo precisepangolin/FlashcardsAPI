@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J4jwSp8uAwiUUAFiiSvVRdBeSZmFQ1LzLSFwk+WqgaXqlAOVq34UUc9QRPbzV0qydB/SDkObE3vQz1QGlH8nvA==",
+  "dgSpecHash": "q32h7N4a47sfFPs67r5vU7u4G63aHvRCKlp0EFfkkGhxb1kWfxtanOumLp5cIRJJF6WldeBpZGX6Y9cA42VBMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kalevala\\source\\repos\\codecool\\FlashcardsAPI\\FlashcardsAPI\\FlashcardsAPI.csproj",
+  "projectFilePath": "C:\\Users\\Kalevala\\source\\repos\\codecool\\FlashcardsAPI\\TestingApp\\TestingApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kalevala\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.21\\microsoft.aspnetcore.jsonpatch.6.0.21.nupkg.sha512",
     "C:\\Users\\Kalevala\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.21\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.21.nupkg.sha512",

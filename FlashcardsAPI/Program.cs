@@ -1,3 +1,5 @@
+using FlashcardsAPI.Infrastructure;
+
 //cors1
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
@@ -13,7 +15,8 @@ builder.Services.AddCors(options =>
         });
 });
 
-builder.Services.AddControllers();
+builder.Services.AddSingleton<DataService>();
+builder.Services.AddControllers().AddNewtonsoftJson();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
