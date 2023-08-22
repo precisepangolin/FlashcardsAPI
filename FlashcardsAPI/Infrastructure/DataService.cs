@@ -17,6 +17,7 @@ namespace FlashcardsAPI.Infrastructure
                 {
                     new Flashcard() { Id = 1, FrontSide = "Jaki jest, każdy widzi", BackSide = "Koń"},
                     new Flashcard() { Id = 2, FrontSide = "Ma kota", BackSide = "Ola"},
+                    // new Flashcard() { Id = 3,FrontSide  = }
                 }
                 },
                 new FlashcardFolder() { Id =2, Name = "Niemiecki", Flashcards= new List<Flashcard>()

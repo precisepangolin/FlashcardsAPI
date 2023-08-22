@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kalevala\\source\\repos\\codecool\\FlashcardsAPI\\TestingApp\\TestingApp.csproj": {}
+    "C:\\Users\\PGTB84\\RiderProjects\\api2\\FlashcardsAPI\\TestingApp\\TestingApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kalevala\\source\\repos\\codecool\\FlashcardsAPI\\FlashcardsAPI\\FlashcardsAPI.csproj": {
+    "C:\\Users\\PGTB84\\RiderProjects\\api2\\FlashcardsAPI\\FlashcardsAPI\\FlashcardsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kalevala\\source\\repos\\codecool\\FlashcardsAPI\\FlashcardsAPI\\FlashcardsAPI.csproj",
+        "projectUniqueName": "C:\\Users\\PGTB84\\RiderProjects\\api2\\FlashcardsAPI\\FlashcardsAPI\\FlashcardsAPI.csproj",
         "projectName": "FlashcardsAPI",
-        "projectPath": "C:\\Users\\Kalevala\\source\\repos\\codecool\\FlashcardsAPI\\FlashcardsAPI\\FlashcardsAPI.csproj",
-        "packagesPath": "C:\\Users\\Kalevala\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kalevala\\source\\repos\\codecool\\FlashcardsAPI\\FlashcardsAPI\\obj\\",
+        "projectPath": "C:\\Users\\PGTB84\\RiderProjects\\api2\\FlashcardsAPI\\FlashcardsAPI\\FlashcardsAPI.csproj",
+        "packagesPath": "C:\\Users\\PGTB84\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PGTB84\\RiderProjects\\api2\\FlashcardsAPI\\FlashcardsAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Kalevala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PGTB84\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,6 +64,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.21, 6.0.21]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.21, 6.0.21]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.21, 6.0.21]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.21, 6.0.21]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -68,21 +90,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.110\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Kalevala\\source\\repos\\codecool\\FlashcardsAPI\\TestingApp\\TestingApp.csproj": {
+    "C:\\Users\\PGTB84\\RiderProjects\\api2\\FlashcardsAPI\\TestingApp\\TestingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kalevala\\source\\repos\\codecool\\FlashcardsAPI\\TestingApp\\TestingApp.csproj",
+        "projectUniqueName": "C:\\Users\\PGTB84\\RiderProjects\\api2\\FlashcardsAPI\\TestingApp\\TestingApp.csproj",
         "projectName": "TestingApp",
-        "projectPath": "C:\\Users\\Kalevala\\source\\repos\\codecool\\FlashcardsAPI\\TestingApp\\TestingApp.csproj",
-        "packagesPath": "C:\\Users\\Kalevala\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kalevala\\source\\repos\\codecool\\FlashcardsAPI\\TestingApp\\obj\\",
+        "projectPath": "C:\\Users\\PGTB84\\RiderProjects\\api2\\FlashcardsAPI\\TestingApp\\TestingApp.csproj",
+        "packagesPath": "C:\\Users\\PGTB84\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PGTB84\\RiderProjects\\api2\\FlashcardsAPI\\TestingApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Kalevala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PGTB84\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,8 +122,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Kalevala\\source\\repos\\codecool\\FlashcardsAPI\\FlashcardsAPI\\FlashcardsAPI.csproj": {
-                "projectPath": "C:\\Users\\Kalevala\\source\\repos\\codecool\\FlashcardsAPI\\FlashcardsAPI\\FlashcardsAPI.csproj"
+              "C:\\Users\\PGTB84\\RiderProjects\\api2\\FlashcardsAPI\\FlashcardsAPI\\FlashcardsAPI.csproj": {
+                "projectPath": "C:\\Users\\PGTB84\\RiderProjects\\api2\\FlashcardsAPI\\FlashcardsAPI\\FlashcardsAPI.csproj"
               }
             }
           }
@@ -122,12 +148,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.21, 6.0.21]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.21, 6.0.21]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.21, 6.0.21]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.21, 6.0.21]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.110\\RuntimeIdentifierGraph.json"
         }
       }
     }

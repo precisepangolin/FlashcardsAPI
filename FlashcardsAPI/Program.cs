@@ -1,3 +1,4 @@
+using FlashcardsAPI;
 using FlashcardsAPI.Infrastructure;
 
 //cors1
@@ -14,6 +15,9 @@ builder.Services.AddCors(options =>
             policy.WithOrigins("http://localhost:3000");
         });
 });
+
+Karol.isProxyUsed(); //TODO -- check czy uzywamy proxy, mozna wywalic 
+Karol.isProxyUsedTwo(); //TODO -- check czy uzywamy proxy, mozna wywalic 
 
 builder.Services.AddSingleton<DataService>();
 builder.Services.AddControllers().AddNewtonsoftJson();
