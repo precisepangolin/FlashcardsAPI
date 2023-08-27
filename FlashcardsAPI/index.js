@@ -3,10 +3,19 @@
 // app.js
 const express = require('express');
 const { Pool } = require('pg')
+const cors = require('cors');
 
 
 //const URL = `postgres://charls7c:r3Y97kyZ.KE5NqA@ep-frosty-firefly-23612795.eu-central-1.aws.neon.tech/Flashcards?options=project%3Dep-frosty-firefly-23612795`;
 const app = express();
+
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+});
+app.use(cors());
 const pool = new Pool({
     host: 'ep-frosty-firefly-23612795.eu-central-1.aws.neon.tech',
     user: 'charls7c',
@@ -25,7 +34,7 @@ const pool = new Pool({
 app.get('/words', async (req, res) => {
     
     try {
-        const result = await pool.query('SELECT * FROM persons');
+        const result = await pool.query('SELECT * FROM Words_english');
         
         res.json(result.rows);
     } catch (err) {
@@ -47,6 +56,6 @@ app.get('/test-connection2', (req, res) => {
     res.send('hello world')
 });
 
-app.listen(7035, () => {
-    console.log('API server listening on port 7035');
+app.listen(7055, () => {
+    console.log('API server listening on port 7055');
 });
