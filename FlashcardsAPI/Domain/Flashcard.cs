@@ -9,5 +9,7 @@
         public string BackSide { get; set; } = string.Empty;
 
         public bool IsMastered { get; set; } = false;
+
+        public int FolderId { get; set; } = 0;
     }
 }

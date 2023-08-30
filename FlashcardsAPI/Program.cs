@@ -1,4 +1,5 @@
 using FlashcardsAPI.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
 //cors1
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -13,6 +14,12 @@ builder.Services.AddCors(options =>
         {
             policy.WithOrigins("http://localhost:3000");
         });
+});
+
+builder.Services.AddDbContext<FlashcardsDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("Host=localhost;Database=Flashcards;Username=milena-codecool;Password=huehuehue"));
+    options.EnableSensitiveDataLogging(builder.Environment.IsDevelopment());
 });
 
 builder.Services.AddSingleton<DataService>();
