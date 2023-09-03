@@ -34,7 +34,7 @@ const pool = new Pool({
 app.get('/words', async (req, res) => {
     
     try {
-        const result = await pool.query('SELECT * FROM Words_english');
+        const result = await pool.query('SELECT word,hint FROM Words_english ORDER BY RANDOM() LIMIT 1');
         
         res.json(result.rows);
     } catch (err) {
