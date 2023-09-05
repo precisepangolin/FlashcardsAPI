@@ -56,6 +56,30 @@ app.get('/test-connection2', (req, res) => {
     res.send('hello world')
 });
 
+app.patch('/update_guessed/:word', async (req, res) => {
+    const { word } = req.params;
+    // const { times_guessed } = req.body;
+    const sql = 'UPDATE words_english SET times_guessed = COALESCE(times_guessed, 0) + 1 WHERE word = $1';
+    try {
+        const result = await pool.query(sql, [word]);
+        res.json(result.rows);
+    } catch (err) {
+        console.error(err.message);
+    }
+});
+
+app.patch('/update_not_guessed/:word', async (req, res) => {
+    const { word } = req.params;
+    // const { times_guessed } = req.body;
+    const sql = 'UPDATE words_english SET times_not_guessed = COALESCE(times_not_guessed, 0) + 1 WHERE word = $1';
+    try {
+        const result = await pool.query(sql, [word]);
+        res.json(result.rows);
+    } catch (err) {
+        console.error(err.message);
+    }
+});
+
 app.listen(7055, () => {
     console.log('API server listening on port 7055');
 });
