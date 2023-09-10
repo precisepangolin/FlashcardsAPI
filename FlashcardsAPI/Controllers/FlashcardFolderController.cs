@@ -2,6 +2,7 @@
 using FlashcardsAPI.Infrastructure;
 using FlashcardsAPI.Domain;
 using FlashcardsAPI.DTOs;
+using Microsoft.EntityFrameworkCore;
 
 namespace FlashcardsAPI.Controllers;
 
@@ -10,30 +11,29 @@ namespace FlashcardsAPI.Controllers;
 
 public class FlashcardFolderController : ControllerBase
 {
-    private readonly DataService _dataService;
-    public FlashcardFolderController(DataService dataService)
+    private readonly FlashcardsDbContext _dbContext;
+
+    public FlashcardFolderController(FlashcardsDbContext dbContext)
     {
-        _dataService = dataService;
+        _dbContext = dbContext;
     }
 
     [HttpGet]
     public ActionResult<IEnumerable<FlashcardFolderDto>> GetFolders() {
-        var userFolders = _dataService.UserFolders.Select(c => new FlashcardFolderDto()
+        var folders = _dbContext.Folders.Select(c => new FlashcardFolderDto()
         {
             Id = c.Id,
             Name = c.Name,
-            Flashcards= c.Flashcards,
+            Flashcards= c.Flashcards
         });
-        var premadeFolders = _dataService.PremadeFolders.Select(c => new FlashcardFolderDto()
-        {
-            Id = c.Id,
-            Name = c.Name,
-            Flashcards = c.Flashcards,
-        });
-        var folders = new List<IEnumerable<FlashcardFolderDto>>()
-        {
-            userFolders, premadeFolders
-        };
+
+
+
+        foreach (var folder in folders)
+        {            var cards = _dbContext.Flashcards
+    .Where(f => f.Id == folder.Id).ToList();
+            folder.Flashcards.AddRange(cards);
+        }
 
         return Ok(folders);
     }

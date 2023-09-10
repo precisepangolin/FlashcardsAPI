@@ -12,6 +12,7 @@ public class FlashcardsDbContext : DbContext
     {
     }
 
+    // NEEDED
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseNpgsql("Host=localhost;Database=Flashcards;Username=milena-codecool;Password=huehuehue");
 
@@ -53,5 +54,7 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
                 Id = 4, FolderId = 3, FrontSide = "Awers4", BackSide = "Rewers4"
             },
         });
+
+
     }
 }

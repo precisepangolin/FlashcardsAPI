@@ -13,7 +13,6 @@ public class FlashcardController : ControllerBase
 
     public FlashcardController(FlashcardsDbContext dbContext)
     {
-        Console.WriteLine("yo3");
         _dbContext = dbContext;
     }
 
@@ -21,10 +20,8 @@ public class FlashcardController : ControllerBase
     [HttpGet("{cardId:int}")]
     public async Task<ActionResult<FlashcardDto>> GetCard(int folderId, int cardId)
     {
-        Console.WriteLine("yo");
         var cards = _dbContext.Flashcards
             .Where(f => f.Id == folderId && f.Id == cardId);
-        Console.WriteLine("yo2");
         if (!await cards.AnyAsync())
         {
             return NotFound();
