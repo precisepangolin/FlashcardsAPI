@@ -80,6 +80,18 @@ app.patch('/update_not_guessed/:word', async (req, res) => {
     }
 });
 
+app.get('/stats', async (req, res) => {
+    // const { word } = req.params;
+    // const { times_guessed } = req.body;
+    const sql = 'SELECT word,times_guessed, times_not_guessed, (times_guessed*100/(times_guessed+times_not_guessed)) as total FROM words_english ORDER BY total DESC ';
+    try {
+        const result = await pool.query(sql);
+        res.json(result.rows);
+    } catch (err) {
+        console.error(err.message);
+    }
+});
+
 app.listen(7055, () => {
     console.log('API server listening on port 7055');
 });
