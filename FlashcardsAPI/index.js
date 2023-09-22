@@ -38,28 +38,28 @@ app.get('/words', async (req, res) => {
         const result = await pool.query('SELECT word,hint FROM Words_english ORDER BY RANDOM() LIMIT 1');
         const wordToTranslate = result.rows[0].word; // Get the word from the response
 
-        const encodedParams = new URLSearchParams();
-        encodedParams.set('q', wordToTranslate);
-        encodedParams.set('target', 'pl');
-
-        const options = {
-            method: 'POST',
-            url: 'https://google-translate1.p.rapidapi.com/language/translate/v2/',
-            headers: {
-                'content-type': 'application/x-www-form-urlencoded',
-                'Accept-Encoding': 'application/gzip',
-                'X-RapidAPI-Key': '90b47d55d9mshf1a7e11e45ee0b1p1972acjsndd8b1439e7bc',
-                'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
-            },
-            data: encodedParams.toString(),
-        };
-
-        const response = await axios.request(options);
-
-        result.rows[0].translation = response.data.data.translations[0].translatedText;
-        // console.log(result.rows[0].word);
-        // console.log(response.data);
-        console.log(response.data.data.translations[0].translatedText)
+        // const encodedParams = new URLSearchParams();
+        // encodedParams.set('q', wordToTranslate);
+        // encodedParams.set('target', 'pl');
+        //
+        // const options = {
+        //     method: 'POST',
+        //     url: 'https://google-translate1.p.rapidapi.com/language/translate/v2/',
+        //     headers: {
+        //         'content-type': 'application/x-www-form-urlencoded',
+        //         'Accept-Encoding': 'application/gzip',
+        //         'X-RapidAPI-Key': '90b47d55d9mshf1a7e11e45ee0b1p1972acjsndd8b1439e7bc',
+        //         'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+        //     },
+        //     data: encodedParams.toString(),
+        // };
+        //
+        // const response = await axios.request(options);
+        //
+        // result.rows[0].translation = response.data.data.translations[0].translatedText;
+        // // console.log(result.rows[0].word);
+        // // console.log(response.data);
+        // console.log(response.data.data.translations[0].translatedText)
         res.json(result.rows)
     } catch (error) {
         console.error(error);
