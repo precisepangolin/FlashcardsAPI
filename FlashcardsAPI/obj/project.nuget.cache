@@ -1,24 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "SebCjwpxpFBDy5EGo5FkSIoWPSZK2zY60kHbFEkIL56PD4HlB9EJ1ULRtUm5AbzoqMMVpUy4pqWMncP4jYrMyQ==",
+  "dgSpecHash": "YJRd/eDEEbUkiURQit6Md2g0IhfhveXM1Hp+ruu0B85a0Cfx7XIzCgZ/yRFleWaM+Aj9HiSwm5rg1Umdfn7ZXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PGTB84\\RiderProjects\\api2\\FlashcardsAPI\\FlashcardsAPI\\FlashcardsAPI.csproj",
+  "projectFilePath": "C:\\Users\\ianze\\RiderProjects\\FlashcardsAPI\\FlashcardsAPI\\FlashcardsAPI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\PGTB84\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.21\\microsoft.aspnetcore.jsonpatch.6.0.21.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.21\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.21.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\PGTB84\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.21\\microsoft.netcore.app.host.win-x64.6.0.21.nupkg.sha512"
+    "C:\\Users\\ianze\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.21\\microsoft.aspnetcore.jsonpatch.6.0.21.nupkg.sha512",
+    "C:\\Users\\ianze\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.21\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.21.nupkg.sha512",
+    "C:\\Users\\ianze\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\ianze\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ianze\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ianze\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\ianze\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\ianze\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\ianze\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\ianze\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\ianze\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
   ],
   "logs": []
 }
